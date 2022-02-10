@@ -1,0 +1,64 @@
+
+<table style="width: 100%; height: 100%;">
+  <tr>
+    <td style="width: 20%;">
+      <div class="flex-shrink-0 p-3 bg-white" style="width: 280px; float: left">
+        <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <div class="box" >
+            <img src="https://images.vexels.com/media/users/3/129288/isolated/preview/52e06e07244a3590366669665ea540e3-icono-de-circulo-de-banco-3.png" style="width: 50%; height: 50%;" >
+          </div>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+              Transferencias
+            </button>
+            <div class="collapse" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a routerLink='prueba' class="link-dark rounded">Prueba</a></li>
+                <li><a href="#" class="link-dark rounded">Updates</a></li>
+                <li><a href="#" class="link-dark rounded">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Pagos
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark rounded">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              Otros Servicios
+            </button>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Cambio de clave</a></li>
+                <li><a href="#" class="link-dark rounded">Bloqueo de tarjeta</a></li>
+                <li><a href="#" class="link-dark rounded">Referencias bancarias</a></li>
+                <li><a href="#" class="link-dark rounded">Estado de ceunta</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-top my-3"></li>
+          <div>
+            <button class="btn align-items-center">Mis contactos</button>
+          </div>
+          <div>
+            <button class="btn align-items-center">Mi perfil</button>
+          </div>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <router-outlet></router-outlet>
+    </td>
+  </tr>
+</table>
