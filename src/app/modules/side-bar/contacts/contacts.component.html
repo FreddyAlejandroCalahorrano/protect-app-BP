@@ -1,0 +1,23 @@
+
+    <div class="row justify-content-md-center ">
+      <div class="colum col-5 " style="padding: 0%;">
+          <div style="margin: 5%;">
+            <input class="form-control" type="input" placeholder="Buscar" ngDefaultControl [(ngModel)]="searchContacts"  (ngModelChange)="searchContact()">
+          </div>
+          <hr style="background-color:#8b8c8d;  margin-bottom:0">
+          <div class="button-add-person ">
+            <button type="button" class="btn btn-success">Agregar Contacto</button>
+          </div>
+          <hr style="background-color:#8b8c8d;  margin-bottom:0">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let item of contacts | async | filterContact: searchContacts">
+                      <div>{{item.firstName + ' ' + item.lastName}}</div>
+                      <div>{{item.bank}}</div>
+                      <div>{{item.acountNumber}}</div>
+                </li>
+            </ul>
+      </div>
+      <div class="colum col-7 ">
+        3 of 3
+      </div>
+    </div>

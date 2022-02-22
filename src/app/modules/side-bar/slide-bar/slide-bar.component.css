@@ -70,3 +70,12 @@
   .fw-semibold { font-weight: 600; }
   .lh-tight { line-height: 1.25; }
   
+
+  .content{
+    width: 75%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left: 6%;
+    padding-right: 6%;
+    
+  }

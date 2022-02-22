@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from '../login/login/login.component';
-import { SlideBarComponent } from '../nav-bar/slide-bar/slide-bar.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { SlideBarComponent } from './slide-bar/slide-bar.component';
 
 const routesSlideBar: Routes = [
   { path: '', component: SlideBarComponent,
     children:[
-      {path: 'prueba', component: LoginComponent},
+      {path: 'contacts', component: ContactsComponent},
       //{path: 'forms/:id/:selec', component: FormsComponent, canDeactivate: [CanDeactivateGuard]}
     ]
   },
