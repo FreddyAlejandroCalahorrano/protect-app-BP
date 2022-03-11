@@ -7,3 +7,14 @@
     border: 1px solid #8b8c8d52;
 
 }
+.row{
+    margin-top: -180px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.card-list:hover {
+    cursor: pointer;
+  }
+.card-header{
+    vertical-align: middle;
+}  

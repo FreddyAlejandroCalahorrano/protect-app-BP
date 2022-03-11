@@ -70,12 +70,19 @@
   .fw-semibold { font-weight: 600; }
   .lh-tight { line-height: 1.25; }
   
-
-  .content{
-    width: 75%;
-    padding-top: 12%;
-    padding-bottom: 12%;
-    padding-left: 6%;
-    padding-right: 6%;
-    
-  }
+ .row{
+   height: 100vh;
+ }
+ .navbar{
+   background-color: rgba(228, 228, 228, 0.603);
+ }
+   .text-navbar{
+    vertical-align: middle;
+    float:left;
+    margin: 5px;
+   }
+   .box{
+     margin-left: 10px;
+     height: 60px;
+     width: 60px;
+   }

@@ -5,6 +5,8 @@ import { SlideBarRoutingModule } from './slide-bar-routing.module';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
 import { FilterContactPipe } from 'src/app/pipes/filter-contact.pipe';
+import { ProductsComponent } from './products/products.component';
+import { TransComponent } from './trans/trans.component';
 
 
 
@@ -12,7 +14,9 @@ import { FilterContactPipe } from 'src/app/pipes/filter-contact.pipe';
   declarations: [
     SlideBarComponent,
     ContactsComponent,
-    FilterContactPipe
+    FilterContactPipe,
+    ProductsComponent,
+    TransComponent
   ],
   imports: [
     CommonModule,

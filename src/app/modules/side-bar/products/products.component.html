@@ -1,0 +1,24 @@
+<div class="container">
+    <div>
+        <h2>
+            Mis Productos
+        </h2>
+    </div>
+        <div class="row" >
+          <div class="col-sm-6 card" *ngFor="let item of cuentas$ | async" (click)="onClickSelectPerson(item)">
+            <div class="card-header">
+                {{item.Descripcion}}
+              </div>
+              <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <a>Disponible:</a>
+                      <a>153151</a>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <a>Contable:</a>
+                      <a>51651</a>
+                    </div>
+              </div>
+          </div>
+        </div>     
+</div>
